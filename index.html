@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cyber Sentinel | Ethical Hacking Assistant</title>
+    <meta name="description"
+        content="A premium AI-powered chatbot for learning ethical hacking and cybersecurity defense.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500&family=Orbitron:wght@400;700&family=Inter:wght@300;400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <div class="background-overlay"></div>
+    <div class="scanlines"></div>
+
+    <main class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <i class="fas fa-shield-alt"></i>
+                <h1>CYBER<span>SENTINEL</span></h1>
+            </div>
+
+            <nav class="nav-menu">
+                <div class="nav-item active" id="nav-chat">
+                    <i class="fas fa-terminal"></i>
+                    <span>Neural Link</span>
+                </div>
+                <div class="nav-item" id="nav-database">
+                    <i class="fas fa-database"></i>
+                    <span>Vuln-Database</span>
+                </div>
+                <div class="nav-item" id="nav-tools">
+                    <i class="fas fa-tools"></i>
+                    <span>Toolkit</span>
+                </div>
+                <div class="nav-item" id="nav-missions">
+                    <i class="fas fa-user-secret"></i>
+                    <span>Missions</span>
+                </div>
+            </nav>
+
+            <div class="status-panel">
+                <div class="status-item">
+                    <span class="label">Uplink:</span>
+                    <span class="value online">SECURE</span>
+                </div>
+                <div class="status-item">
+                    <span class="label">Decryption:</span>
+                    <span class="value">ACTIVE</span>
+                </div>
+                <div class="system-stats">
+                    <div class="stat-bar">
+                        <div class="fill" style="width: 65%;"></div>
+                    </div>
+                    <p>CPU LOAD: 65%</p>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Chat Area -->
+        <section class="chat-wrapper">
+            <header class="chat-header">
+                <div class="header-info">
+                    <h2>Terminal Session <span>[ID: 0x7F2A]</span></h2>
+                    <p class="subtitle">Secure communication channel established.</p>
+                </div>
+                <div class="header-actions">
+                    <button class="action-btn" title="Clear Logs"><i class="fas fa-eraser"></i></button>
+                    <button class="action-btn" title="Download Transcript"><i class="fas fa-download"></i></button>
+                </div>
+            </header>
+
+            <div class="chat-history" id="chat-history">
+                <div class="message bot-message">
+                    <div class="bot-avatar"><i class="fas fa-robot"></i></div>
+                    <div class="message-content">
+                        <p class="typing">Welcome, operative. I am Cyber Sentinel. I am programmed to assist in your
+                            ethical hacking education and system defense strategies. How can I help you secure the
+                            perimeter today?</p>
+                        <div class="message-meta">SYSTEM | 17:20:01</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="chat-input-area">
+                <div class="input-container">
+                    <span class="prompt">></span>
+                    <input type="text" id="user-input" placeholder="Enter command or query..." autocomplete="off">
+                    <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
+                </div>
+                <div class="hints">
+                    <span>Try: "Explain SQL Injection"</span>
+                    <span>"Common vulnerabilities"</span>
+                    <span>"System hardening"</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Right Detail Panel (Hidden on small screens) -->
+        <aside class="detail-panel">
+            <div class="panel-section">
+                <h3>Vulnerability Intelligence</h3>
+                <div class="vuln-card">
+                    <div class="vuln-header">
+                        <span class="tag high">CRITICAL</span>
+                        <h4>Log4Shell (CVE-2021-44228)</h4>
+                    </div>
+                    <p>Remote Code Execution vulnerability in Apache Log4j...</p>
+                    <a href="#" class="read-more">Learn Mitigation</a>
+                </div>
+            </div>
+
+            <div class="panel-section">
+                <h3>Global Threat Map</h3>
+                <div class="threat-map-placeholder">
+                    <div class="map-grid"></div>
+                    <div class="pulse"></div>
+                    <div class="pulse" style="animation-delay: 2s; top: 30%; left: 60%;"></div>
+                </div>
+            </div>
+        </aside>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
